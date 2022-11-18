@@ -1,6 +1,10 @@
 body {
-    color: grey;
-    background-color: black;
-    font-family: sans-serif;
+    color: white;
+    background-color: darkmagenta;
+    font-family: "Kanit",sans-serif;
+}
 
+H1 {
+    text-align: left;
+    font-size: 50px;
 }
