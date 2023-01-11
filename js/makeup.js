@@ -1,7 +1,4 @@
 
-
-
-
 let form = document.querySelector('.js-form');
 
 
@@ -30,9 +27,9 @@ fetch(Url)
     .then(data => data.json())
     .then(r =>{
 
-        for(i =0; i< 10; i++)
+        for(i =0; i< r.length; i++)
         {
-            document.getElementById("image").innerHTML += "<img src=" + r[i].image_link + ">";
+            document.getElementById("image").innerHTML += '<img class="img-makeup" src="' + r[i].image_link +'">';
         }
     });
     
