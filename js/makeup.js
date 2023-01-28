@@ -1,37 +1,37 @@
-
 let form = document.querySelector('.js-form');
-
-
 let select = document.querySelector('.js-makeup-brand');
 
 
 function formSubmitted(event) { 
 
+    event.preventDefault();
+
     document.getElementById("image").innerHTML = "";
-
-event.preventDefault();
-
-alert(select.value);
+    alert(select.value);
 
 
-let number = select.value;
+    let number = select.value;
 
+     let API_PREFIX = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=';
+     let Url = API_PREFIX + select.value;
 
-let apiUrl = `http://makeup-api.herokuapp.com/api/v1/products.json?brand=${select.value}`;
+    fetch(Url) 
+        .then(data => data.json())
+        .then(r =>{
 
-let Url = `http://makeup-api.herokuapp.com/api/v1/products.json?brand=${select.value}`;
+            for(i = 0; i < r.length; i++) 
+            {
+                document.getElementById("image").innerHTML += '<img class="img-makeup" src="' + r[i].image_link +'" alt="' + r[i].name + '">';
+            }
 
-
-fetch(Url) 
-
-    .then(data => data.json())
-    .then(r =>{
-
-        for(i =0; i< r.length; i++)
-        {
-            document.getElementById("image").innerHTML += '<img class="img-makeup" src="' + r[i].image_link +'">';
-        }
-    });
+    let html = '';
+            for(i = 0; i < r.length; i++) 
+            {
+                html += `<img class="img-makeup" src="${r[i].image_link}" alt="${r[i].name}">`;
+            }
+            document.getElementById("image").innerHTML = html;
+        
+        });
     
 }
 

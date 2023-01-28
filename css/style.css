@@ -1,13 +1,36 @@
+
+nav {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: 3px 2px 3px black;
+    font-family:"Nunito Sans";
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.topnav :visited {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.topnav {
+    text-align: right;
+    align-items: center;
+}
+
 body {
     color:white;
     text-shadow: 3px 2px 3px black;
     background-color:darkmagenta;
-    font-family:"Nunito Sans";
+    font-family:"Nunito Sans";  
+    text-align: center;
 }
 
 H1 {
-    text-align:center;
     font-size:50px;
+    text-align: center;
 }
 
 .img-makeup {   
@@ -24,16 +47,15 @@ button {
     font-size:15px;
 }
 
-button:hover, .js-makeup-brand:hover { 
+button:hover, .makeup-brand:hover { 
     color:darkgoldenrod; 
 }
 
-.js-makeup-brand { 
-    font-size:19px;
-  
+.makeup-brand { 
+    font-size:19px; 
 }
 
-.js-makeup-brand, button {
+.makeup-brand, button {
     text-align:center;
     border-color:black;
     border-style:solid;
@@ -43,11 +65,23 @@ button:hover, .js-makeup-brand:hover {
     cursor:pointer;
 }
 
-footer { 
-    text-align:center;
-    color:black;
-    text-shadow: 2px 2px 2px white;
-    font-size:20px;
-    margin-top:600px;
+.bottomnav { 
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: 3px 2px 3px black;
     font-family:"Nunito Sans";
+    font-weight: bold;
+    cursor: pointer;
+    font-family:"Nunito Sans";
+   
+}
+
+.bottomnav :visited {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 100px;
 }
