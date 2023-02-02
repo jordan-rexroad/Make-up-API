@@ -12,7 +12,7 @@ function formSubmitted(event) {
 
     let number = select.value;
 
-     let API_PREFIX = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=';
+     let API_PREFIX = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=';
      let Url = API_PREFIX + select.value;
 
     fetch(Url) 
