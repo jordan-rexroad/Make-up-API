@@ -1,4 +1,4 @@
-# Project-2
+# Project-2 Make-up API 
 
 Description
 My name is Jordan Rexroad, this is my Makeup Brand Search Engine built in VS Code. 
@@ -13,5 +13,4 @@ HTML, CSS, JavaScript
 
 User stories are located in Issues.
 
-Hosting link  https://jordan-rexroad.github.io/Project-2/  
-Git hub  https://github.com/jordan-rexroad/Project-2
+Hosting link  https://jordan-rexroad.github.io/Project-2/
